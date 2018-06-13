@@ -16,6 +16,7 @@ namespace AspNetCore_netFW.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            ViewData["Message2"] = "----------------------------------........";
 
             return View();
         }

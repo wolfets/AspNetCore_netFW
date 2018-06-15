@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MvvmLight1.Model;
 
 namespace AspNetCore_netFW
 {
@@ -20,6 +21,10 @@ namespace AspNetCore_netFW
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            // Add application services.
+            ////////////services.AddTransient<IDateTime, SystemDateTime>();
+
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -29,6 +34,11 @@ namespace AspNetCore_netFW
         {
             // Add framework services.
             services.AddMvc();
+
+            //----
+            //services.AddTransient<IDataService, DateTime>();
+            services.AddTransient<IDataService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,5 +66,6 @@ namespace AspNetCore_netFW
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+
     }
 }

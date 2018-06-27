@@ -4,21 +4,37 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MvvmLight1.Model;
+using Microsoft.Extensions.Options;
 
 namespace AspNetCore_netFW.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IDataService _dataService;
+        private readonly DataItem _dataItem;
+        private readonly DataService _dataServ;
 
-        public HomeController(IDataService dataservice)
+        //public HomeController(IOptions<DataItem> dataItem)
+        public HomeController(IOptions<DataService> dataServ)
         {
-            _dataService = dataservice;
+            //_dataItem = dataItem.Value;
+            _dataServ = dataServ.Value;
         }
 
 
         public IActionResult Index()
         {
+            //ViewData["Title"] = _dataItem.Title;
+            _dataServ.GetData(
+            (item, error) =>
+            {
+                if (error != null)
+                {
+                    // Report error here
+                    return;
+                }
+                ViewData["Title"] = item.Title;
+            });
+
             return View();
         }
 

@@ -11,7 +11,7 @@ namespace MvvmLight1.Model
             // Use this to connect to the actual data service
 
             item2 = new DataItemUC3("DataServiceUC3");
-            var itemMain = new DataItem("DataServiceMain créé par UC3");
+            var itemMain = new DataItem();//"DataServiceMain créé par UC3");
             callback(item2, itemMain, null);
 
         }

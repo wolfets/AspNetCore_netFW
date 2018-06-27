@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MvvmLight1.Model;
+using AspNetCore_netFW.Model;
 
 namespace AspNetCore_netFW
 {
@@ -32,12 +33,25 @@ namespace AspNetCore_netFW
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddMvc();
+            // Required to use the Options<T> pattern
+            services.AddOptions();
+
+            // Add settings from configuration
+            services.Configure<SampleWebSettings>(Configuration);
+
+            //Uncomment to add settings from code
+           //services.Configure<DataItem>(settings =>
+           //{
+           //    settings.Title = "titre = 177777";
+           //});
 
             //----
             //services.AddTransient<IDataService, DateTime>();
-            services.AddTransient<IDataService>();
+            services.AddTransient<DataService>();
+
+            // Add framework services.
+            services.AddMvc();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

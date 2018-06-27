@@ -5,12 +5,12 @@
         public string Title
         {
             get;
-            private set;
+            set;
         }
 
-        public DataItem(string title)
+        public DataItem()
         {
-            Title = title;
+            ////////////Title = title;
         }
     }
 }

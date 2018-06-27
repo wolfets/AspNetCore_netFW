@@ -23,7 +23,7 @@ namespace AspNetCore_netFW
             Configuration = builder.Build();
 
             // Add application services.
-            ////////////services.AddTransient<IDateTime, SystemDateTime>();
+            ///////////////services.AddTransient<IDateTime, SystemDateTime>();
 
         }
 
@@ -38,7 +38,6 @@ namespace AspNetCore_netFW
             //----
             //services.AddTransient<IDataService, DateTime>();
             services.AddTransient<IDataService>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

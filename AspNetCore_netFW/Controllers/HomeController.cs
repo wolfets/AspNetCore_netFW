@@ -24,21 +24,21 @@ namespace AspNetCore_netFW.Controllers
 
 
         //https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/dependency-injection?view=aspnetcore-2.1
-        public IActionResult About([FromServices] IDataService _dataservice)
+        public IActionResult About()/////////////[FromServices] IDataService _dataservice)
         {
             ViewData["Message"] = "Your application description page.";
 
-            _dataService.GetData(
-            (item, error) =>
-            {
-                if (error != null)
-                {
-                                // Report error here
-                                return;
-                }
+            //_dataService.GetData(
+            //(item, error) =>
+            //{
+            //    if (error != null)
+            //    {
+            //                    // Report error here
+            //                    return;
+            //    }
 
-                ViewData["Message"] = item.Title;
-            });
+            //    ViewData["Message"] = item.Title;
+            //});
 
 
             ViewData["Message2"] = "----------------------------------........";

@@ -11,13 +11,16 @@ namespace AspNetCore_netFW.Controllers
     public class HomeController : Controller
     {
         private readonly DataItem _dataItem;
-        private readonly DataService _dataServ;
+        //private readonly DataService _dataServ;
+        private readonly IDataService _dataServ;
 
         //public HomeController(IOptions<DataItem> dataItem)
-        public HomeController(IOptions<DataService> dataServ)
+        //public HomeController(IOptions<DataService> dataServ)
+        public HomeController(IDataService dataServ)
         {
             //_dataItem = dataItem.Value;
-            _dataServ = dataServ.Value;
+            //_dataServ = dataServ.Value;
+            _dataServ = dataServ;
         }
 
 

@@ -40,14 +40,14 @@ namespace AspNetCore_netFW
             services.Configure<SampleWebSettings>(Configuration);
 
             //Uncomment to add settings from code
-           //services.Configure<DataItem>(settings =>
-           //{
-           //    settings.Title = "titre = 177777";
-           //});
+            //services.Configure<DataItem>(settings =>
+            //{
+            //    settings.Title = "titre = 177777";
+            //});
 
             //----
             //services.AddTransient<IDataService, DateTime>();
-            services.AddTransient<DataService>();
+            services.AddTransient<IDataService, DataService>();
 
             // Add framework services.
             services.AddMvc();

@@ -27,9 +27,9 @@ namespace UnitTestProject1
                         // Report error here
                         Assert.IsTrue(false, "1 should not be prime");
                     }
-                    Assert.IsTrue(true, "1 should not be prime");
+                    Assert.IsTrue(item.Title == "Welcome to MVVM Light", "Devrait être : 'Welcome to MVVM Light'");
                 });
-            Assert.IsFalse(ctrl == null, "1 should not be prime");
+            //Assert.IsFalse(ctrl == null, "1 should not be prime");
         }
     }
 }

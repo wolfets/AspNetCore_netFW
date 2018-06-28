@@ -9,7 +9,7 @@ namespace MvvmLight1.Model
             // Use this to connect to the actual data service
 
             var item = new DataItem();/// "Welcome to MVVM Light");
-            item.Title = "Welcome to MVVM Light__yyyyy__";
+            item.Title = "Welcome to MVVM Light";
             callback(item, null);
         }
     }

@@ -41,6 +41,11 @@ namespace AspNetCore_netFW.Controllers
             return View();
         }
 
+        public bool returnTrue()
+        {
+            return true;
+        }
+
 
         //https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/dependency-injection?view=aspnetcore-2.1
         public IActionResult About()/////////////[FromServices] IDataService _dataservice)

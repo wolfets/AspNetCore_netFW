@@ -10,13 +10,14 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void DataService()
         {
-            DataService ctrl = new DataService();
-            Assert.IsFalse(ctrl == null, "1 should not be prime");
+            DataService ds = new DataService();
+            Assert.IsFalse(ds == null, "ne devrait pas être null");
         }
+
         [TestMethod]
-        public void TestMethod2()
+        public void DataService_Title()
         {
             DataService ctrl = new DataService();
             ctrl.GetData(
@@ -25,11 +26,11 @@ namespace UnitTestProject1
                     if (error != null)
                     {
                         // Report error here
-                        Assert.IsTrue(false, "1 should not be prime");
+                        Assert.IsTrue(false, $"{error}");
                     }
                     Assert.IsTrue(item.Title == "Welcome to MVVM Light", "Devrait être : 'Welcome to MVVM Light'");
                 });
-            //Assert.IsFalse(ctrl == null, "1 should not be prime");
+            //Assert.IsFalse(ctrl != null, "1 should not be prime");
         }
     }
 }

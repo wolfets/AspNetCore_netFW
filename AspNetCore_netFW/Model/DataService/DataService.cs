@@ -12,5 +12,11 @@ namespace MvvmLight1.Model
             item.Title = "Welcome to MVVM Light";
             callback(item, null);
         }
+
+        public void Get21(Action<int, Exception> callback)
+        {
+            callback(21, null);
+        }
+
     }
 }

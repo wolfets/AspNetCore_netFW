@@ -32,5 +32,29 @@ namespace UnitTestProject1
                 });
             //Assert.IsFalse(ctrl != null, "1 should not be prime");
         }
+
+
+        [TestMethod]
+        public void DataService_21()
+        {
+            const int EXPECTED = 21;
+
+            DataService ctrl = new DataService();
+            ctrl.Get21(
+                (item, error) =>
+                {
+                    if (error != null)
+                    {
+                        // Report error here
+                        Assert.IsTrue(false, $"{error}");
+                    }
+                Assert.AreEqual(item, EXPECTED);//, $" {item} Devrait être : 21");
+                });
+            //Assert.IsFalse(ctrl != null, "1 should not be prime");
+        }
+
+
+
+
     }
 }

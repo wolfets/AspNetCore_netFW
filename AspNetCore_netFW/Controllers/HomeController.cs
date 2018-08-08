@@ -65,7 +65,7 @@ namespace AspNetCore_netFW.Controllers
             //});
 
 
-            ViewData["Message2"] = "----------------------------------........";
+            ViewData["Message2"] = "Message2-------------------........";
 
             return View();
         }

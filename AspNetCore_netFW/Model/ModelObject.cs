@@ -3,7 +3,7 @@ using System.Net;
 using System.Windows;
 using System.ComponentModel;
 
-namespace MvvmLight1.Model
+namespace AspNetCore_netFW.Model
 {
   public class ModelObject : INotifyPropertyChanged
   {

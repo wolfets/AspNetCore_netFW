@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 //https://www.developpez.net/forums/d1004606/dotnet/developpement-windows/windows-presentation-foundation/wpf-mvvm-communications-entre-viewmodels/
 //https://msdn.microsoft.com/en-us/magazine/20ef72fd-cee4-41e8-b4f2-062bb0bbf48e
 
-namespace MvvmLight1.Model
+namespace AspNetCore_netFW.Model
 {
     public class Messenger
     {

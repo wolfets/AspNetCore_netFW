@@ -1,16 +1,17 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MvvmLight1.Model;
+
 using System.Diagnostics;
 using System.IO;
 using System.Xml.Linq;
+using AspNetCore_netFW.Model;
 
 //https://msdn.microsoft.com/fr-fr/library/ms182532.aspx#BKMK_Create_a_unit_test_project
 //https://docs.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-with-mstest
 
 //https://cdn.ttgtmedia.com/digitalguide/images/Misc/professionalvsts_ch14.pdf
 
-namespace UnitTestProject1
+namespace AspNetCore_netFW
 {
     [TestClass]
     public class UnitTest1

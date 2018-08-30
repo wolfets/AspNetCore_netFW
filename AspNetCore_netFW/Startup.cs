@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MvvmLight1.Model;
+
 using AspNetCore_netFW.Model;
 
 namespace AspNetCore_netFW

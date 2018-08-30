@@ -1,4 +1,4 @@
-﻿namespace MvvmLight1.Model
+﻿namespace AspNetCore_netFW.Model
 {
     public class DataItem
     {

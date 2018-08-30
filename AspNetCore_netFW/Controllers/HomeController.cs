@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using MvvmLight1.Model;
+using AspNetCore_netFW.Model;
 using Microsoft.Extensions.Options;
 
 namespace AspNetCore_netFW.Controllers

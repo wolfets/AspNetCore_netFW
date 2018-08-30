@@ -1,7 +1,7 @@
-﻿using MvvmLight1;
+﻿using AspNetCore_netFW;
 using System;
 
-namespace MvvmLight1.Model
+namespace AspNetCore_netFW.Model
 {
     public class DataServiceUC3 : IDataServiceUC3
     {

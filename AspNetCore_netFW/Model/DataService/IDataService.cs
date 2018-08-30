@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MvvmLight1.Model
+namespace AspNetCore_netFW.Model
 {
     public interface IDataService
     {

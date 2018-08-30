@@ -5,9 +5,7 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_netFW", "AspNetCore_netFW\AspNetCore_netFW.csproj", "{3DFCAC0A-4D00-4D75-87C1-AD2CF1DD72D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{BF570A23-1244-4E0D-8EA2-D0906E945A16}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject2", "UnitTestProject2\UnitTestProject2.csproj", "{983B3804-84DE-479E-BE10-E2E2BBCFF9F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_netFWTest", "UnitTestProject1\AspNetCore_netFWTest.csproj", "{BF570A23-1244-4E0D-8EA2-D0906E945A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{BF570A23-1244-4E0D-8EA2-D0906E945A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF570A23-1244-4E0D-8EA2-D0906E945A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF570A23-1244-4E0D-8EA2-D0906E945A16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{983B3804-84DE-479E-BE10-E2E2BBCFF9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{983B3804-84DE-479E-BE10-E2E2BBCFF9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{983B3804-84DE-479E-BE10-E2E2BBCFF9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{983B3804-84DE-479E-BE10-E2E2BBCFF9F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
